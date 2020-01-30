@@ -3,7 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
-
+import Echart from 'echarts';
+Vue.prototype.$echarts = Echart;
 Vue.config.productionTip = false;
 
 new Vue({
