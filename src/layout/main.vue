@@ -7,7 +7,9 @@
       <div class="side">
         <bar-side></bar-side>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>

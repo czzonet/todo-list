@@ -22,8 +22,13 @@ const routes = [
   {
     path: "/main",
     name: "main",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../layout/main.vue")
+    component: () => import(/* webpackChunkName: "main" */ "../layout/main.vue"),
+    children: [
+      {
+        path: 'dashboard', name: 'dashboard',
+        component: () => import(/* webpackChunkName: "dashboard" */ "../components/dashboard/index.vue"),
+      }
+    ]
   }
 ];
 
