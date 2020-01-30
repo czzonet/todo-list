@@ -33,7 +33,8 @@ export default {
   height: 100%;
 
   .header {
-    flex-basis: 100px;
+    // flex-basis: 100px;
+    flex: 0;
   }
 
   .body {
